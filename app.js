@@ -9,7 +9,7 @@
 
 
  function makerRequest(){
- fetch("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LTC,YFI,BNB,ETH,DASH&tsyms=USD&api_key={a2cf7878f815439fc3137bcb1befd25f38d761f69f0dfef0251571cca875f61d} ")
+ fetch("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LTC,YFI,BNB,ETH,DASH&tsyms=USD&api_key={your-api-key} ")
    
   .then((res)=>{
    
