@@ -1,0 +1,98 @@
+body {
+  margin: 30px;
+  background-image:url(https://images.idgesg.net/images/article/2018/01/blockchain_bitcoin_circuitry_global-100745937-large.jpg);
+
+}
+
+
+td{
+  color:black;
+  text-align:center;
+  font-weight:600;
+  font-size:18px;
+}
+
+
+
+th{
+  color:rgba(0,0,0,0.6)!important;
+  font-size: 24px;
+  text-align:center;
+  background-color:rgba(255,255,255,0.8)!important;
+}
+
+#fetchedJson{
+  border-radius:10px!important;
+}
+
+
+
+.table{
+  margin-top:50px!important;
+  height: 60vh;
+   background: rgba( 255, 255, 255, 0.8 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 5px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+
+thead{
+  border-radius:10px!important;
+ 
+}
+
+th{
+  font-family: 'Poppins', sans-serif;
+}
+
+.h1{
+  font-family: 'Poppins', sans-serif;
+  color:black;
+  font-size:40px;
+  background: -webkit-linear-gradient(45deg, #4a2b76, #640cc7, #ef0f03, #1b3b86 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.table {
+
+border-radius: 10px;
+border: none;
+  
+}
+
+td{
+  padding: 20px 0px!important;
+}
+
+tbody td{
+  border:none!important
+}
+
+@media only screen and (max-width: 768px){
+#btchigh, #ltchigh, #bnbhigh, #respo , #ethhigh{
+  display:none;
+
+}
+
+ th{
+  border-radius: 0px 10px 0px 0px!important;
+}
+
+thead, th{
+  background-color: white!important;
+}
+
+#vol{
+  border-radius:0!important;
+}
+
+.h1{
+  font-size: 30px;
+}
+
+
+}
