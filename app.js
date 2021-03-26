@@ -1,12 +1,3 @@
-// document.getElementById("btn8").addEventListener("click", makerRequest );
-
-
-
-
- //Async await
-
-// //Remote
-
 
  function makerRequest(){
  fetch("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,LTC,YFI,BNB,ETH,DASH&tsyms=USD&api_key={your-api-key} ")
@@ -26,63 +17,18 @@
   
 
     then((data) => {
-       
-      // data.forEach(element =>{
-      // let output = document.getElementById("fetchedJson")
-    
-      
-      // output.innerHTML +=  `
-      // <tr>
-      // <td> <img src="${element.logo_url}" width="20px" > </td>
-      // <td> ${element.currency}</td>
-      // <td> ${element.price}</td>
-      // <td> ${element.market_cap}</td>
-      // </tr>
-     
-      // `
-       
-
-      // })
+   
     
       console.log(data)
     
       console.log(data.USD)
       
 
-      // var coinData = document.getElementById("fetchedJson");
-
-      
-      // for(i = 0; i < data.length; i++){
-      
-      //   coinData.innerHTML += `
-        
-      //   <tr>
-        
-      //   <td>${data[i].id}</td>
-      //   <td>${data[i].price}</td>
-
-      //   </tr>
-
-      //   `
-
-      
-      // }
  let btcprice = document.getElementById("btcprice");
  
       let btcmarketcap = document.getElementById("btcmarketcap");
       let btcHigh = document.getElementById("btchigh");
     
-      // let btc = JSON.parse(data.USD);
-      // let bnb = JSON.parse(data[2].price);
-      // let ltc = JSON.parse(data[4].price);
-      // let eth = JSON.parse(data[1].price);
-
-  
-
-      // let btcparsed = btc.toFixed(2);
-      // let bnbparsed = bnb.toFixed(2);
-      // let ltcparsed = ltc.toFixed(2);
-      // let ethparsed = eth.toFixed(2);
 
       let ethprice = document.getElementById("ethprice");
       let ethmarketcap = document.getElementById("ethmarketcap");
@@ -151,33 +97,5 @@
 }
 
 setInterval(makerRequest, 4000);
-
-// // POst Data
-// document.getElementById("btn").addEventListener("click", makerequest);
-
-// // Promise Then 
-// function makerequest(e) {
-//   e.preventDefault()
-//   let name = document.getElementById("name").value
-//   let job = document.getElementById("job").value
-//   console.log("Button Clicked")
-//   const myInit = {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify({ name: name, job: job })
-//   }
-//   console.log("Body:", myInit.body)
-//   fetch('data.json', myInit)
-//     .then((res) => {
-//       if (!res.ok) {
-//         throw Error(res.statusText)
-//       }
-//       return res.json()
-//     }).then((data) => {
-//       console.log(data)
-//     }).catch((error) => console.log(error))
-// }
 
 
